@@ -1,0 +1,452 @@
+//      =============  Slider ==============
+.home__slider {
+    margin-left: 50px;
+    margin-right: 50px;
+    & .slick-prev {
+        position: absolute;
+        top: 50%;
+        left: 30px;
+        z-index: 10;
+        width: 22px;
+        height: 69px;
+        background: transparent url(../img/left.svg) center center no-repeat;
+        border: 0;
+        padding: 0;
+        margin-top: -35px;
+    }
+    & .slick-next {
+        position: absolute;
+        top: 50%;
+        right: 30px;
+        z-index: 10;
+        width: 22px;
+        height: 69px;
+        background: transparent url(../img/right.svg) center center no-repeat;
+        border: 0;
+        padding: 0;
+        margin-top: -35px;
+    }
+    
+}
+
+.home__slider img {
+    max-width: 100%;
+    height: auto;
+}
+
+.figure {
+    position: relative;
+
+}
+
+.figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.title-one {
+    font-family: Waiting for the Sunrise;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 170px;
+    line-height: 281px;
+    color: #F7A1A8;
+    position: absolute;
+    top: 22%;
+    right: 17%;
+}
+
+.title-two {
+    font-family: Waiting for the Sunrise;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 250px;
+    line-height: 250px;
+    letter-spacing: 10px;
+    color: #FFFFFF;
+    position: absolute;
+    left: 10%;
+    top: 55%;
+}
+
+.title-three {
+    font-family: Waiting for the Sunrise;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 99px;
+    letter-spacing: 10px;
+    color: #433840;
+    position: absolute;
+    left: 30%;
+    top: 75%;
+}
+
+// =========== .home__about ===============
+.home__about {
+    background: url(../img/home1.png) center center no-repeat;
+    background-size: cover;
+    padding-bottom: 1px;
+}
+
+.home__title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 62px;
+    color: #433840;
+    margin-top: 90px;
+}
+
+.home__subtitle {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 50px;
+    color: #F7A1A8;
+    display: block;
+    text-align: center;
+    margin-bottom: 70px;
+    font-family: Waiting for the Sunrise;
+}
+
+// ================ .home__shop =====================
+
+.home__shop {
+    margin-top: 160px;
+}
+
+// ================= .home__subscribe ==================
+
+.home {
+
+    // .home__subscribe
+
+    &__subscribe {
+        background: #DFEEB6;
+        margin-top: 160px;
+        margin-left: 50px;
+        margin-right: 50px;
+        padding-bottom: 120px;
+    }
+
+    // .home__wrapper
+
+    &__wrapper {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    // .home__colLeft
+
+    &__colLeft {
+        z-index: 9;
+        width: calc(50% - 35px);
+    }
+
+    // .home__colLeft-img
+
+    &__colLeft-img {
+       margin-bottom: 0;
+       margin-top: -100px;
+    }
+    
+
+    // .home__colRight
+
+    &__colRight {
+        width: calc(50% - 35px);
+        margin-bottom: 100px;
+    }
+
+    &__title-w {
+        font-weight: bold;
+        line-height: 62px;
+        font-size: 50px;
+        color: #fff;
+        text-align: left;
+    }
+
+    // .home__subtitle-w
+
+    &__subtitle-w {
+        text-align: left;
+        color: #F7A1A8;
+        line-height: 50px;
+        font-size: 30px;
+        font-weight: 300;
+        font-family: Waiting for the Sunrise;
+        
+    }
+
+}
+
+.home__form {
+    display: flex;
+    align-items: center;
+    margin-top: 21px;
+}
+
+form.home__form .email {
+    background: #FFFFFF;
+    border: 3px solid #FEE9EF;
+    border-radius: 5px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 60px;
+    color: #9A9A9A;
+    padding-left: 20px;
+    height: 60px;
+    width: 100%;
+    transition: all 300ms ease-in-out;
+    &:focus {
+        transition: all 300ms ease-in-out;
+        border-color: #B1CFE1;
+    }
+}
+
+form.home__form .email:-ms-input-placeholder { /* IE 10+ */
+    color: #9A9A9A;
+}
+form.home__form .email::-moz-placeholder { /* Firefox 19+ */
+    color: #9A9A9A;
+    opacity: 1;
+}
+form.home__form .email:-moz-placeholder { /* Firefox 4 - 18 */
+    color: #9A9A9A;
+    opacity: 1;
+}
+
+form.home__form .submit {
+    background: #FEA3AC;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+    height: 60px;
+    padding: 0 45px;
+    border-radius: 5px;
+    margin-left: 25px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    &:hover {
+        background: #B1CFE1;
+        transition: all 300ms ease-in-out;
+    }
+}
+
+// =============== .home__blog =================
+
+.home__blog .home__title{
+    margin-top: 60px;
+}
+
+.home__blog {
+    background: url(../img/home4.jpg) bottom right no-repeat;
+    padding-bottom: 31px;
+}
+
+// =============== slider ==============
+
+.home {
+
+    // .home__testimonials
+
+    &__testimonials {
+    }
+
+    // .home__title
+
+    &__title {
+    }
+
+    // .home__subtitle
+
+    &__subtitle {
+    }
+}
+.testimomnials {
+
+    // .testimomnials__slider
+
+    &__slider {
+        max-width: 780px;
+        width: 94%;
+        margin: 0 auto;
+    }
+}
+.testy {
+
+    // .testy__item
+
+    &__item {
+        text-align: center;
+    }
+}
+.author {
+
+    // .author__name
+
+    &__name {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 25px;
+        color: #433840;
+        margin-bottom: 14px;
+    }
+
+    // .author__description
+
+    &__description {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 25px;
+        text-align: center;
+        color: #9A9A9A;
+        margin-bottom: 10px;
+    }
+
+    // .author__link
+
+    &__link {
+        font-family: Waiting for the Sunrise;
+        text-align: center;
+        
+        &:hover {
+            & span {
+                color: #FEA3AC;
+                transition: all 300ms ease-in-out;
+            }
+        }
+        & span {
+            transition: all 300ms ease-in-out;
+            color: #B1CFE1;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 33px;
+            
+        }
+    }
+}
+
+
+//  ============ slider ========
+.testimomnials__slider .slick-dots { 
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;
+   & li {
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    &.slick-active {
+        & button {
+            background: #FEA3AC;
+            transition: all 300ms ease-in-out;
+        }
+    }
+   }
+   & button {
+   font-size: 0;
+   width: 10px;
+   height: 10px;
+   background: #DFEEB6;
+   border-radius: 100%;
+   }
+   & .active {
+       background: #FEA3AC;
+   }
+}
+
+
+// =========== Mobile Styles ========
+
+
+
+@media ( max-width: 1180px ) {
+    .title-one {
+        font-size: 80px;
+        line-height: 80px;
+    }
+    .title-two {
+        font-size: 120px;
+        line-height: 120px;
+        top: 45%;
+    }
+    .title-three {
+        font-size: 40op;
+        line-height: 40px;
+        left: 100px;
+        top: 70%;
+    }
+    .svg_style::before {
+        height: 70px;
+        background-position: bottom center;
+    }
+    .svg_style::after {
+        background-position: top center;
+        height: 70px;
+    }
+    .svg_style {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+    .menu__list-item {
+        width: 100%;
+    }
+    .home__colLeft {
+        display: none;
+    }
+    .home__colRight {
+        width: 100%;
+        margin-bottom: 0;
+        margin-top: 60px;
+    }
+}
+
+@media  ( max-width: 800px ) {
+    .top__footer {
+        padding-bottom: 0;
+    }
+    .title-two {
+        font-size: 80px;
+        line-height: 80px;
+    }
+    .title-three {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    
+    
+    .home__subscribe {
+       margin-top: 40px;
+       padding-bottom: 100px;
+    }
+}
+
+@media ( max-width: 600px ) {
+    .title-one {
+        display: none;
+    }
+    .title-two {
+        display: none;
+    }
+    .title-three {
+        display: none;
+    }
+    .blog__post {
+        width: 100%;
+        text-align: center;
+    }
+    .blog__thumbnail {
+        display: inline-block;
+    }
+    .about__data {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+}
